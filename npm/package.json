@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/syllablecounter",
+  "version": "1.1.12",
+  "description": "Syllable Counter is a tool for counting syllables in words and text. It uses the CMU Pronouncing Dictionary for accurate syllable counting with rule-based fallback for unknown words.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/syllablecounter-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "syllable counter", "syllables", "word syllables", "text analysis", "pronunciation"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/syllablecounter-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/syllablecounter?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
