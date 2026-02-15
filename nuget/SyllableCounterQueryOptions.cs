@@ -12,7 +12,6 @@ namespace APIVerve.API.SyllableCounter
     {
         /// <summary>
         /// The text to count syllables in (max 500 characters)
-        /// Example: The quick brown fox jumps over the lazy dog
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
