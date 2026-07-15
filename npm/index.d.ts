@@ -4,25 +4,37 @@ declare module '@apiverve/syllablecounter' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface syllablecounterResponse {
     status: string;
     error: string | null;
     data: SyllableCounterData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface SyllableCounterData {
-      text:                    string;
-      totalSyllables:          number;
-      wordCount:               number;
-      averageSyllablesPerWord: number;
+      text:                    null | string;
+      totalSyllables:          number | null;
+      wordCount:               number | null;
+      averageSyllablesPerWord: number | null;
       words:                   Word[];
   }
   
   interface Word {
-      word:      string;
-      syllables: number;
+      word:      null | string;
+      syllables: number | null;
   }
 
   export default class syllablecounterWrapper {
