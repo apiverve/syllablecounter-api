@@ -25,6 +25,9 @@ namespace APIVerve.API.SyllableCounter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,13 +36,13 @@ namespace APIVerve.API.SyllableCounter
         public string Text { get; set; }
 
         [JsonProperty("total_syllables")]
-        public long TotalSyllables { get; set; }
+        public long? TotalSyllables { get; set; }
 
         [JsonProperty("word_count")]
-        public long WordCount { get; set; }
+        public long? WordCount { get; set; }
 
         [JsonProperty("average_syllables_per_word")]
-        public double AverageSyllablesPerWord { get; set; }
+        public double? AverageSyllablesPerWord { get; set; }
 
         [JsonProperty("words")]
         public Word[] Words { get; set; }
@@ -51,6 +54,18 @@ namespace APIVerve.API.SyllableCounter
         public string WordWord { get; set; }
 
         [JsonProperty("syllables")]
-        public long Syllables { get; set; }
+        public long? Syllables { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
