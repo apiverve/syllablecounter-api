@@ -2,17 +2,17 @@ from setuptools import setup, find_packages
 
 setup(
     name='apiverve_syllablecounter',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'requests',
         'setuptools'
     ],
-    description='Syllable Counter is a tool for counting syllables in words and text. It uses the CMU Pronouncing Dictionary for accurate syllable counting with rule-based fallback for unknown words.',
+    description='Syllable Counter counts syllables across any submitted text string up to 500 characters. It returns the total syllable count, total word count, and average syllables per word.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com/marketplace/syllablecounter?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/syllablecounter?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',

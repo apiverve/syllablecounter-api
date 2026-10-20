@@ -1,13 +1,13 @@
 [project]
 name = "apiverve-syllablecounter"
-version = "1.1.14"
+version = "1.2.2"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Syllable Counter is a tool for counting syllables in words and text. It uses the CMU Pronouncing Dictionary for accurate syllable counting with rule-based fallback for unknown words."
-keywords = []
+description = "Syllable Counter counts syllables across any submitted text string up to 500 characters. It returns the total syllable count, total word count, and average syllables per word."
+keywords = ["syllable counter", "syllables", "word syllables", "text analysis", "pronunciation"]
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 license = {text = "MIT"}
 dependencies = [
     "requests>=2.25.0"
@@ -17,35 +17,13 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
-    "Intended Audience :: Financial and Insurance Industry",
-    "Intended Audience :: Healthcare Industry",
-    "Intended Audience :: Education",
-    "Intended Audience :: Science/Research",
-    "Intended Audience :: Information Technology",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Utilities",
-    "Topic :: Scientific/Engineering",
-    "Topic :: Education",
-    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
-    "Topic :: Internet :: WWW/HTTP :: Site Management",
     "Topic :: Internet :: WWW/HTTP",
-    "Topic :: Software Development :: Libraries",
-    "Topic :: Software Development :: Libraries :: Application Frameworks",
-    "Topic :: Internet",
-    "Topic :: Communications",
-    "Topic :: Office/Business",
-    "Topic :: Text Processing",
-    "Topic :: Security",
-    "Topic :: Database",
-    "Topic :: Software Development :: Code Generators",
-    "Topic :: Software Development :: Pre-processors",
-    "Topic :: Software Development :: Quality Assurance",
-    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Libraries :: Python Modules",
     "Natural Language :: English",
 ]
 
 [project.urls]
-Homepage = "https://apiverve.com?utm_source=pypi"
+Homepage = "https://apiverve.com/marketplace/syllablecounter?utm_source=pypi&utm_medium=referral&utm_content=homepage"
+Documentation = "https://docs.apiverve.com/ref/syllablecounter?utm_source=pypi&utm_medium=referral&utm_content=docs"
 Repository = "https://github.com/apiverve/syllablecounter-api"
-Documentation = "https://docs.apiverve.com/api/syllablecounter?utm_source=pypi"
 Twitter = "https://twitter.com/apivervehq"
