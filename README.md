@@ -1,13 +1,13 @@
-# [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Syllable Counter is a tool for counting syllables in words and text. It uses the CMU Pronouncing Dictionary for accurate syllable counting with rule-based fallback for unknown words.
+Syllable Counter counts syllables across any submitted text string up to 500 characters. It returns the total syllable count, total word count, and average syllables per word.
 
 The Syllable Counter API provides a simple, reliable way to integrate syllable counter functionality into your applications. Built for developers who need production-ready syllable counter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -167,7 +167,7 @@ go get github.com/apiverve/syllablecounter-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/syllablecounter](https://docs.apiverve.com/ref/syllablecounter)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -197,11 +197,69 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Syllable Counter API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "text": "The quick brown fox jumps over the lazy dog",
+    "total_syllables": 11,
+    "word_count": 9,
+    "average_syllables_per_word": 1.22,
+    "words": [
+      {
+        "word": "the",
+        "syllables": 1
+      },
+      {
+        "word": "quick",
+        "syllables": 1
+      },
+      {
+        "word": "brown",
+        "syllables": 1
+      },
+      {
+        "word": "fox",
+        "syllables": 1
+      },
+      {
+        "word": "jumps",
+        "syllables": 1
+      },
+      {
+        "word": "over",
+        "syllables": 2
+      },
+      {
+        "word": "the",
+        "syllables": 1
+      },
+      {
+        "word": "lazy",
+        "syllables": 2
+      },
+      {
+        "word": "dog",
+        "syllables": 1
+      }
+    ]
+  }
 }
 ```
 
@@ -209,7 +267,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Syllable Counter API](https://apiverve.com/marketplace/syllablecounter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

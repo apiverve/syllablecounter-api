@@ -2,9 +2,9 @@ openapi: 3.0.4
 info:
   title: Syllable Counter
   description: >-
-    Syllable Counter is a tool for counting syllables in words and text. It uses
-    the CMU Pronouncing Dictionary for accurate syllable counting with
-    rule-based fallback for unknown words.
+    Syllable Counter counts syllables across any submitted text string up to 500
+    characters. It returns the total syllable count, total word count, and
+    average syllables per word.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/syllablecounter:
     post:
-      summary: Count Syllables
+      summary: Syllable Counter
       description: Count syllables in words and text
       operationId: syllablecounter
       parameters: []
