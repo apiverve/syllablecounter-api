@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/syllablecounter",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Syllable Counter counts syllables across any submitted text string up to 500 characters. It returns the total syllable count, total word count, and average syllables per word.",
   "main": "index.js",
   "types": "index.d.ts",
